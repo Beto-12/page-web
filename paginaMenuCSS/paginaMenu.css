@@ -1,0 +1,202 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.contenedorPrincipal{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+/*Encabezado*/
+header {
+    position: fixed;   /* Fija el header */
+    top: 0;  /* Mantener en la parte superior */
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin-left: 130px;
+}
+
+nav {
+    margin-right: 130px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: color 1s ease-in;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: rgb(88, 164, 240);
+    font-weight: 700;
+}
+
+/*Contenedor de ¿Quien soy yo?*/
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor img {
+    margin-top: 70px;
+    width: 600px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.textos {
+    margin-left: 80px;
+}
+
+.textos h1 {
+    text-align: left;
+    color: orangered;
+    font-size: 60px;
+}
+
+.textos p {
+    padding-right: 100px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.0;
+    margin: 20px 0px;
+    padding-bottom: 10px;
+}
+
+.textos a {
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: orangered;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+    transition: color 1s ease-in;
+}
+.textos a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*Contenedor 2 de ¿Quien soy yo? */
+.contenedor2 {
+    background-color: orangered;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contenedor2 img {
+    width: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.contenedor2 p {
+    margin: 0px 120px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.contenedor2 .name {
+    font-size: 20px;
+    font-style: oblique;
+    color: white;
+}
+
+/*Div del titulo de proyectos*/
+.tituloProyectos {
+    color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 30px;
+}
+
+/*Div de las cards de proyectos*/
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    justify-content:center;
+    gap: 20px;
+}
+
+.cardProyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.5s;
+}
+.cardProyecto:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.cardProyecto img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.cardProyecto h2 {
+    margin: 10px 0px;
+}
+
+.cardProyecto p {
+    padding: 0px 10px;
+    margin: 0px 0px 30px 0px;
+}
+
+.cardProyecto a {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    align-self: center;
+
+}
+
+.cardProyecto a:hover {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*Pie de pagina*/
+footer {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+footer p {
+    margin-right: 150px;
+}
